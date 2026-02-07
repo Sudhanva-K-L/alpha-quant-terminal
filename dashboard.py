@@ -50,7 +50,7 @@ with st.sidebar:
 # 4. Main Execution Logic
 try:
     # Fetch Data from FastAPI
-    api_url = f"http://https://web-production-ce9e6.up.railway.app/predict/{ticker}"
+    api_url = f"https://web-production-ce9e6.up.railway.app/predict/{ticker}"
     res = requests.get(api_url).json()
 
     if "error" in res:
